@@ -1,0 +1,265 @@
+.service-section {
+  background-color: #f8f8f8;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.title-main {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.title-sub {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.slider-wrapper {
+  margin-bottom: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: visible;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  overflow: visible !important;
+  padding-right: 20px;
+}
+
+.slick-dots {
+  position: relative !important;
+  bottom: unset !important;
+  margin-top: 2rem !important;
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #999;
+  opacity: 1;
+}
+
+.slick-slide > div {
+  padding: 1rem;
+  overflow: visible !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #1a1a1a !important;
+  font-size: 30px !important;
+}
+
+.slick-prev {
+  left: -40px !important;
+  z-index: 2;
+}
+.slick-next {
+  right: -10px;
+  z-index: 2;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center center;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  position: relative;
+}
+
+.card-icons {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 1rem;
+  display: block;
+  align-items: center;
+}
+
+.service-card .service-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.card-lists {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.card-button {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.service-card-link {
+  display: inline-block;
+  border-radius: 8px;
+  color: #1c1c1c;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.service-card-link:hover {
+  background-color: #ffdb60;
+  transform: scale(1.05);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service-button {
+  font-size: 18px;
+  font-weight: 600;
+  width: 240px;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: #1c1c1c;
+  background-color: #f4c542;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.service-button:hover {
+  background-color: #f8d039;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3), 0px 0px 25px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .title-main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .title-sub {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .service-card {
+    width: 90%;
+    padding: 1.5rem;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service-card .service-title {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .service-card-link {
+    font-size: 0.9rem;
+  }
+
+  .card-lists {
+    font-size: 0.95rem;
+    line-height: 2rem;
+  }
+
+  .card-icons {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+  }
+
+  .service-button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-section {
+    padding: 1rem;
+  }
+
+  .title-main {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .title-sub {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .slick-dots {
+    margin-top: -10px !important;
+  }
+
+  .service-card {
+    height: auto;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .button-container {
+    margin-top: -10px;
+  }
+  .card-button {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-card .service-title {
+    font-size: 0.9rem;
+  }
+
+  .card-lists {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .service-card-link {
+    font-size: 0.9rem;
+  }
+  .service-button {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    width: 200px;
+  }
+}
