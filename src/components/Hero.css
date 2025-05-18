@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 3rem;
   width: 100%;
   min-height: 400px;
   text-align: center;
@@ -20,7 +20,7 @@
 }
 
 .hero-img {
-  max-width: 100%;
+  width: 100%;
   max-width: 450px;
   height: auto;
 }
@@ -72,6 +72,7 @@
   }
 
   .hero-img {
+    max-width: 300px;
     height: auto;
   }
 
